@@ -1,0 +1,38 @@
+import 'package:flutter/material.dart';
+
+class Livros extends StatelessWidget {
+  const Livros({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 104, 103, 110),
+      appBar: AppBar(
+        title: Text("Meus Livros Lidos"),
+        backgroundColor: const Color.fromARGB(255, 185, 64, 255),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Text(
+              "CRONOS",
+              style: TextStyle(fontSize: 25, color: Colors.white),
+            ),
+            Image.network(
+                'https://cdn.pixabay.com/photo/2024/02/23/17/26/clock-8592484_1280.jpg',
+                height: 250),
+            Text(
+              "OUTLANDER",
+              style: TextStyle(fontSize: 25, color: Colors.white),
+            ),
+            Image.network(
+              'https://cdn.pixabay.com/photo/2024/02/12/16/45/rocks-8568995_1280.jpg',
+              height: 250,
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}

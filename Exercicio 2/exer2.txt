@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+
+class exercicio extends StatelessWidget {
+  const exercicio({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 104, 103, 110),
+      appBar: AppBar(
+        title: Text("Meus Livros Lidos"),
+        backgroundColor: const Color.fromARGB(255, 185, 64, 255),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            SizedBox(height: 30),
+            Text(
+              "Eu",
+              style: TextStyle(
+                  fontSize: 50,
+                  backgroundColor: Color.fromARGB(255, 58, 9, 236)),
+            ),
+            SizedBox(height: 30),
+            Text("Amo",
+                style: TextStyle(
+                    fontSize: 50,
+                    backgroundColor: Color.fromARGB(255, 255, 64, 96))),
+          ],
+        ),
+      ),
+    );
+  }
+}
